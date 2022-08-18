@@ -11,8 +11,8 @@ export class EmailService {
         this.nodemailerTransport = createTransport({
             service: process.env.EMAILSERVER || 'gmail',
             auth: {
-                user: process.env.EMAIL || 'yancarloglez98@gmail.com',
-                pass: process.env.PASSEMAIL || 'yancarlo@gmail'
+                user: process.env.EMAIL,
+                pass: process.env.PASSEMAIL
             }
         })
     }
