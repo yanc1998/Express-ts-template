@@ -19,7 +19,7 @@ export class EmailService {
 
     async sendEmail(to: string, data: any, subject: string): Promise<Result<void>> {
         const mailOptions = {
-            from: process.env.EMAIL || 'yancarloglez98@gmail.com',
+            from: process.env.EMAIL,
             to: to,
             subject: subject,
             data: data
